@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="header">
+
+    <!--About This Web Application-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#1a222b">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Blogging Platform, Blog Creation, Secure Blogging, Blogging Community, User-Friendly Blog Platform, Bcrypt Password Security, Blogging Application, Blog Post Sharing, Blogging Tools, Online Writing Platform, Content Creation, Reader Engagement, Blog Commenting, Creative Writing Community, Blogging Security, Guest Blogging, Blog Comment System, Safe Blogging Environment, Blogging Membership, Register for Blogging, Writer's Community, Comment Interaction, User-Generated Content, Creative Expression, Blogging Inspiration, Online Publishing, PostScribe Registration, Secure User Accounts, Content Sharing, Blogging Safety, Blogging Creativity, Blogging Ideas, Web-Based Blogging, Safe User Login, Blog Reading, Engage with Bloggers, Blogging Insights, Blog Discovery, Bloggers Network, Online Blogging Community">
+    <meta name="description" content="Discover PostScribe, the ultimate web application for writing and sharing blog posts. PostCribe offers an intuitive platform for creating, reading, and commenting on blog posts. Guest users can easily explore the content, while registered users enjoy the added security of the Bcrypt password algorithm for a seamless login experience. Join PostCribe today and unleash your creativity in a safe online environment."/>
+
+    <!--About organization / Company-->
+    <meta property="og:title" content="PostScribe : Blog Application | Write Good Blogs" />
+    <!--    <meta property="og:url" content="https://github.com/PawaseBB" />-->
+    <meta property="og:site_name" content="PostScribe" />
+    <meta property="og:description" content="Discover PostScribe, the ultimate web application for writing and sharing blog posts. PostCribe offers an intuitive platform for creating, reading, and commenting on blog posts. Guest users can easily explore the content, while registered users enjoy the added security of the Bcrypt password algorithm for a seamless login experience. Join PostCribe today and unleash your creativity in a safe online environment."/>
+
+    <title>PostScribe</title>
+
+    <!--All Links-->
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="icon" href="#" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+
+</head>
+<body>
+<!--Start Navigation Bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" th:fragment="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">PostScribe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" th:href="@{/}">All Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" th:href="@{/register}">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" th:href="@{/login}">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--End Navigation Bar-->
+</body>
+</html>

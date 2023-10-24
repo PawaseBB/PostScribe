@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head >
+
+    <!--About This Web Application-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Blog Application, Write Blog, Secure Blog">
+    <meta name="description" content="####"/>
+
+    <!--About organization / Company-->
+    <meta property="og:title" content="PostScribe : Blog Application | Write Good Blogs" />
+    <!--    <meta property="og:url" content="https://github.com/PawaseBB" />-->
+    <meta property="og:site_name" content="PostScribe" />
+    <meta property="og:description" content="####"/>
+
+    <title>PostScribe</title>
+
+    <!--All Links-->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="icon" href="" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" th:href="@{css/404.css}" />
+</head>
+<body class="bg-purple">
+
+
+    <div class="stars">
+        <!--Start Navigation Bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" th:fragment="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">PostScribe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" th:href="@{/}">All Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" th:href="@{/register}">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" th:href="@{/login}">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--End Navigation Bar-->
+        <br/><br/><br/>
+        <div class="central-body">
+            <img class="image-404" src="http://salehriaz.com/404Page/img/404.svg" width="300px" alt="404 image">
+            <h2>The requested Page could not find it</h2>
+            <a th:href="@{/}" class="btn-go-home" target="_blank">GO BACK HOME</a>
+        </div>
+        <br/><br/><br/>
+        <div class="objects">
+            <img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px" alt="rocket image">
+            <div class="earth-moon">
+                <img class="object_earth" src="http://salehriaz.com/404Page/img/earth.svg" width="100px" alt="earth image">
+                <img class="object_moon" src="http://salehriaz.com/404Page/img/moon.svg" width="80px" alt="moon image">
+            </div>
+            <div class="box_astronaut">
+                <img class="object_astronaut" src="http://salehriaz.com/404Page/img/astronaut.svg" width="140px" alt="astronaut image">
+            </div>
+        </div>
+        <div class="glowing_stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+
+        </div>
+
+    </div>
+    <br/><br/><br/>
+<!--Start Footer -->
+<div th:replace="~{error/footer :: footer}"></div>
+<!--End Footer -->
+</body>
+</html>

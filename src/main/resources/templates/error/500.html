@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<div th:replace="~{error/header :: header}"></div>
+
+<body>
+<header>
+    <!--Start Navigation Bar-->
+    <div th:replace="~{error/header :: navbar}"></div>
+    <!--End Navigation Bar-->
+</header>
+<br/>
+<main>
+<h1>Internal Server Error</h1>
+<h2>There is some problem in processing your request.</h2>
+    <p>Go Back to <a th:href="@{/}" ><button> Home </button></a> page</p>
+</main>
+<!--Start Footer -->
+<div th:replace="~{error/footer :: footer}"></div>
+<!--End Footer -->
+</body>
+</html>
