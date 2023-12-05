@@ -43,7 +43,7 @@ To get a copy of this project up and running on your local machine, follow these
    mvn spring-boot:run
    ```
 
-4. Access the application in your web browser:
+4. Access the application in your local web browser:
 
    [http://localhost:8080](http://localhost:8080)
 
